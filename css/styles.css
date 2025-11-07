@@ -1,0 +1,61 @@
+.content {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.5);
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 500;
+    font-style: oblique;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+}
+
+.content h1 {
+    text-shadow: 0 8px 16px rgba(219, 125, 48, 0.795);
+}
+
+.blurredBackground {
+    position: fixed;
+    inset: 0;
+    background-image: url("../img/math.jpeg");
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+#main {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#guessBtn {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(58, 29, 29);
+    background-color: rgb(169, 199, 169);
+    border-radius: 15%;
+}
+
+#curvedText {
+    padding-bottom: 80px;
+}
+
+#playerGuess {
+    background-color: rgb(169, 199, 169);
+    border-radius: 10%;
+}
